@@ -1,0 +1,31 @@
+{
+  "name": "bell--markdown-cms--nodejs",
+  "version": "1.0.0",
+  "description": "CMS based on Markdown-Files",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgteam/bell--markdown-cms--nodejs.git"
+  },
+  "keywords": [
+    "cms"
+  ],
+  "author": "Jannis Günsche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgteam/bell--markdown-cms--nodejs/issues"
+  },
+  "homepage": "https://github.com/jgteam/bell--markdown-cms--nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "escape-string-regexp": "^4.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "showdown": "^1.9.1",
+    "uuid": "^8.3.2"
+  }
+}

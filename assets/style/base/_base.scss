@@ -1,0 +1,166 @@
+html , body {
+
+  font-size: $baseFontSize_PX;
+
+  background-color: $base;
+
+  font-size: $baseFontSize;
+  font-family: $fontText;
+
+}
+
+* {
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+
+  min-width: 100%;
+  width: 100%;
+  background-color: $base;
+
+}
+
+.wrapper {
+
+  max-width: 1440px;
+  width: 100%;
+
+  padding: #{$marginTop} #{$marginLeft};
+
+  margin: 0 auto;
+
+}
+
+main .wrapper {
+
+  padding: #{$marginTop} #{$marginContent};
+
+
+}
+
+hr {
+
+  margin: 20px 0;
+
+}
+
+p {
+
+  margin-bottom: 10px;
+
+}
+
+li {
+
+  margin-bottom: 4px;
+  color: $primary;
+
+}
+
+ul, ol {
+
+  margin-bottom: 26px;
+  padding-left: 18px;
+
+}
+
+blockquote {
+
+  padding-left: 18px;
+  border-left: 3px solid $primary;
+
+}
+
+h1, h2, h3, h4, p, a {
+
+  color: $primary;
+
+}
+
+h1, h2, h3, h4 {
+
+  font-family: $fontHeadingAndActions;
+  font-size: $h2FontSize;
+
+}
+
+h3 {
+
+  font-size: $h3FontSize;
+
+}
+
+h4 {
+
+  font-size: $h4FontSize;
+
+}
+
+h1 {
+
+  font-size: $h1FontSize;
+
+}
+
+a:focus {
+
+  outline: 3px solid $primary;
+  outline-offset: 3px;
+
+}
+
+body.page--article main, body.page--legal main, body.page--contact main, body.page--mywork main {
+
+  pre {
+
+    margin: 20px 0;
+
+    code {
+
+      display: inline-block;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+
+      width: 100%;
+
+      max-width: 850px;
+
+    }
+
+  }
+
+  h1, h2, h3, h4 {
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+  }
+
+  p {
+
+    max-width: 850px;
+
+  }
+
+  img {
+
+    max-width: 100%;
+
+  }
+
+}

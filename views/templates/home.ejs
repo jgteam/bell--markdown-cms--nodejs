@@ -1,0 +1,43 @@
+<main>
+    <div class="container">
+        <div class="wrapper">
+
+            <div class="left">
+
+                <div class="top">
+
+                    <%-
+
+                    printDocumentHere(fileText, fileElements, uniquePlaceholder);
+
+                    -%>
+
+                </div>
+
+                <div class="bottom">
+
+                </div>
+
+            </div>
+
+            <% if(meta['ShowLatestWork'] != "false"){ %>
+
+            <div class="right">
+
+                <h2><%- meta["LatestWorkHeading"]; -%></h2>
+
+                <%-
+
+                projectCard(getLatestProject());
+
+                -%>
+                <a class="anchor-button view-all" href="<%- ROOT -%>mywork">View all</a>
+
+            </div>
+
+            <% } %>
+
+        </div>
+    </div>
+
+</main>

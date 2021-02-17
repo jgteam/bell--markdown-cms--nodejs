@@ -1,0 +1,121 @@
+
+a.project-card {
+
+  cursor: pointer;
+
+  width: 340px;
+  height: 380px;
+  display: block;
+
+  text-decoration: none;
+  text-decoration-line: none;
+
+  position: relative;
+
+  div.card-wrapper {
+
+    width: 340px;
+    height: 380px;
+
+    background-color: $primary;
+
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    div.card-preview-container {
+
+      width: 100%;
+      flex-grow: 1;
+
+      overflow: hidden;
+
+      opacity: 0;
+
+      animation: card-preview .2s normal .4s forwards;
+
+      @keyframes card-preview {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      div.card-preview {
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        transition: all .2s;
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+
+
+        &.empty {
+
+          background-size: 30%;
+          filter: brightness(10);
+          opacity: 0.1;
+
+        }
+
+        &::after {
+
+          content: "";
+          position: absolute;
+          background-color: $primary;
+          opacity: 0.1;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+
+          transition: opacity .2s;
+
+
+        }
+
+      }
+
+    }
+
+    .card-title {
+
+      min-height: 114px;
+
+      color: $base;
+      font-size: $h2FontSize;
+      padding: 32px;
+
+      margin: 0;
+
+    }
+
+  }
+
+  &:hover, &:focus {
+
+    div.card-wrapper div.card-preview-container div.card-preview {
+
+      width: 110%;
+      height: 110%;
+      top: -5%;
+      left: -5%;
+
+      &::after {
+
+        opacity: 0;
+
+      }
+
+    }
+
+  }
+
+}

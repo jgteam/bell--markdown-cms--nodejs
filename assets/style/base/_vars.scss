@@ -1,0 +1,39 @@
+$baseFontSize_PX: 18px;
+
+$fontText: "Roboto";
+$fontHeadingAndActions: "Raleway";
+
+$baseFontSize: 1rem;
+$h1FontSize: 2rem;
+$h2FontSize: calc(1rem * 4 / 3);
+$h3FontSize: calc(1rem * 10 / 9);
+$h4FontSize: 1rem;
+
+$base: #f2f2f2;
+$primary: #49660e;
+$dark: #2a340e;
+$grey: #353535;
+$gray: #{$grey};
+$secondary: #f1f830;
+
+$baseTranslucent: rgba(242, 242, 242, 0.2);
+$primaryTranslucentHOME: rgba(73, 102, 14, 0.1);
+$primaryTranslucent: rgba(42, 52, 14, 0.3);
+$darkTranslucent: rgba(1, 31, 38, 0.05);
+$greyTranslucent: rgba(53, 53, 53, 0.2);
+$grayTranslucent: #{$greyTranslucent};
+$coralTranslucent: rgba(241, 248, 48, 0.2);
+
+
+$translucent: 0.2;
+
+$marginTop: 30px;
+$marginLeft: calc(#{$marginTop} * 2);
+
+$marginContent: calc(#{$marginLeft} * 3);
+
+
+//$marginBtwSocialLinks: 35px;
+$marginBtwSocialLinks: 30px;
+$marginBtwLinks: calc(#{$marginTop} * 2);
+$marginBtwSections: calc(#{$marginTop} * 7 / 3);

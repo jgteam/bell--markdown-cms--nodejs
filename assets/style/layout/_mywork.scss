@@ -1,0 +1,24 @@
+body.page--mywork main {
+
+  div.wrapper {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: calc(100vh - ( 79px + 238px));
+
+  }
+
+  .project-gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .project-card {
+
+      margin: 50px calc((100% - 2 * 340px) / 4);
+
+    }
+
+  }
+
+}
