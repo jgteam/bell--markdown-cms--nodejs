@@ -58,7 +58,7 @@ function getConfig(key, source) {
 
     return false;
 
-};
+}
 
 function printHeaderMenuHere() {
 
@@ -141,6 +141,7 @@ function openPage(folder, name){
     try {
         fileContent = fs.readFileSync('./usercontent/' + folder + '/' + name, 'utf8')
     } catch (err) {
+        return false;
         console.error(err)
     }
 
@@ -324,26 +325,41 @@ function getAttribute(key, source) {
 
 function getAllProjects() {
 
-    // Alle Dateienamen aus dem Ordner holen
+    // Alle Dateinamen aus dem Ordner holen
     var files = fs.readdirSync("./usercontent/projects/");
-
-    //
-    //
-    // HIER BITTE NACH DATUM SORTIEREN! DANKE
-    //
-    //
 
     var filesWithDates = [];
 
     files.forEach(function (file) {
 
+        var filePath = "./usercontent/projects/"+file;
+
+        var fileContent = "";
+
+        try {
+            fileContent = fs.readFileSync(filePath, 'utf8')
+        } catch (err) {
+            console.error(err)
+        }
+
+        var fileDate = getAttribute("Date", fileContent);
+
         var datedFile = [];
         datedFile['fileName'] = file;
-        datedFile['fileDate'] = "2020-01-01";
+        datedFile['fileDate'] = fileDate;
 
         filesWithDates.push(datedFile);
 
     });
+
+    // https://www.sitepoint.com/sort-array-index/
+    filesWithDates.sort(function(a, b){
+        var a1= a['fileDate'], b1= b['fileDate'];
+        if(a1 == b1) return 0;
+        return a1> b1? 1: -1;
+    });
+
+    filesWithDates = filesWithDates.reverse();
 
     return filesWithDates;
 
@@ -370,6 +386,29 @@ function printProjectCardGalleryHere() {
 app.locals.printProjectCardGalleryHere = printProjectCardGalleryHere;
 
 // --- EJS-Files
+
+
+app.get('/open/:key', function(req, res, next) {
+
+    var key = req.params.key;
+
+    var config;
+
+    try {
+        config = fs.readFileSync("./usercontent/config/redirects.conf", 'utf8')
+    } catch (err) {
+        console.error(err)
+    }
+
+    var redirectURL = getConfig(key, config);
+
+    if(redirectURL) {
+        res.redirect(redirectURL);
+    } else {
+        res.redirect(ROOT);
+    }
+
+});
 
 
 app.get('/mywork', function(req, res, next) {
@@ -426,6 +465,8 @@ app.get(['/', '/mywork', '/contact', '/privacy-policy', '/legal-notice', '/page/
 
     var openPage_output = openPage(preparedFileFolder, preparedFileName);
 
+    if(!openPage_output)
+        res.redirect(ROOT);
 
 
     var headTitle = getConfigValue("headtitle");
