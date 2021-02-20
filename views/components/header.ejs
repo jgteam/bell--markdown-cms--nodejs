@@ -1,5 +1,7 @@
 <div class="header">
 
+    <!-- Header: Beinhaltet Navigation, h1-Pagetitle, Logos und Sociallinks -->
+
     <div class="container">
         <div class="wrapper">
 

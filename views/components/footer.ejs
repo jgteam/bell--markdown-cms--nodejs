@@ -1,5 +1,7 @@
 <div class="footer">
 
+    <!-- Footer: Beinhaltet Impressum- und Datenschutz-Link und Copyright-Text -->
+
     <div class="container">
         <div class="wrapper">
 

@@ -1,8 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="de">
 
 <head>
+
+    <!-- Html Metadaten: Charset, Viewport, Icons, Stylesheet und Title -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
 
@@ -30,12 +32,15 @@
 
 <body class="page--<%- pageType -%>">
 
+    <!-- Header-Template aufrufen -->
     <%- include("components/header"); -%>
 
-
+    <!-- Body-Template aufrufen -->
     <%
 
-        if(pageType == "home") {%>
+    // Je nach Seitentyp, wird ein anderes Template aufgerufen
+
+    if(pageType == "home") {%>
             <%- include("templates/home");-%>
     <%} else if(pageType == "article" || pageType == "legal") {%>
         <%- include("templates/article");-%>
@@ -47,10 +52,8 @@
 
      %>
 
-
-
+    <!-- Footer-Template aufrufen -->
     <%- include("components/footer"); -%>
-
 
 </body>
 </html>
