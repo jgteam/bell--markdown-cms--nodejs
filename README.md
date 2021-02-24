@@ -7,8 +7,8 @@
 
 ## Stack
 
-- E: Express (NPM-Module)
-- N: Nodejs
+- Express (NPM-Module)
+- Nodejs
 
 Weitere Software, welche zum Einsatz kommt:
 
