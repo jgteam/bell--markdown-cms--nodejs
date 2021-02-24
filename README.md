@@ -16,6 +16,7 @@ Weitere Software, welche zum Einsatz kommt:
 - showdown (NPM-Module)
 - escape-string-regexp (NPM-Module)
 - body-parser (NPM-Module)
+- express (NPM-Module)
 - (nodemon (NPM-Module))
 - uuid (NPM-Module)
 
