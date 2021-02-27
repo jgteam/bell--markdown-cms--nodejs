@@ -21,10 +21,12 @@ Weitere Software, welche zum Einsatz kommt:
 - uuid (NPM-Module)
 
 ## Installation
-
-
+```
+npm install
+```
 
 ## Benutzung 
-
-
-
+Start server:
+```
+npm start
+```
