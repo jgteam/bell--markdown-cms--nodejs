@@ -5,22 +5,9 @@ Type: legal
 [DOCUMENTSTART]
 
 
-[ACTION]
-href: test
-Text: Readme
-Icon: mycustomicon.svg
-[/ACTION]
-
-
 Hier kommt dein Impressumstext hin. Ganz Wichtig!
 
 ---
-
-[ACTION]
-Href: $ROOT$page/readme
-Text: Readme
-Icon: mycustomicon.svg
-[/ACTION]
 
 
 ## Muster-Impressum von https://jurarat.de/muster-impressum
@@ -90,10 +77,3 @@ Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deut
 
 Dieses Impressum wurde freundlicherweise von www.jurarat.de zur Verfügung gestellt.
 
-
-
-[ACTION]
-Href: $ROOT$page/readme
-Text: Readme
-Icon: mycustomicon.svg
-[/ACTION]

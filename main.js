@@ -11,7 +11,7 @@ const showdown  = require('showdown'); // Wird benutzt um Markdown in HTML zu ve
 const converter = new showdown.Converter();
 
 // Port und Root-URL
-const port = 3000;
+const port = getConfigValue("PORT");
 const ROOT = getConfigValue("ROOT");
 
 // --- Middlewares
