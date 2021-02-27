@@ -20,6 +20,10 @@ Weitere Software, welche zum Einsatz kommt:
 - (nodemon (NPM-Module))
 - uuid (NPM-Module)
 
+
+## Vorbereitung
+Trage deine StammURL und deinen Port, über welche die Applikation erreichbar sein wird, in der Konfigurationsdatei unter `ROOT` und `PORT` ein. Die Konfigurationsdatei findest du unter `usercontent/config/config.conf`.
+
 ## Installation
 ```
 npm install
@@ -30,3 +34,6 @@ Start server:
 ```
 npm start
 ```
+
+## Weitere Schritte
+Rufe über die StammURL deine Seite auf. Du wirst auf der Startseite und im Header einen Link zur README-Seite finden. Auf dieser erfährst du, wie du deine neue Webseite pflegen kannst.
