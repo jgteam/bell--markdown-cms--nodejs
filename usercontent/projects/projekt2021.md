@@ -1,6 +1,6 @@
 Title: Projekt 2021
 Date: 2021-04-01
-PreviewImage: projekt2021.png
+PreviewImage: project.png
 Type: article
 
 [DOCUMENTSTART]
@@ -18,7 +18,7 @@ Text: Readme
 Icon: mycustomicon.svg
 [/ACTION]
 
-![Dummy-Image](./../usercontent/images/projekt2021.png)
+![Dummy-Image](./../usercontent/images/project.png)
 
 ```
 

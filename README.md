@@ -2,6 +2,9 @@
 
 💡 Dieses Repo ist im Zusammenhang mit der [besonderen Lernleistung im Fach Informatik von Jannis Günsche](https://github.com/jgteam/bell--paper) entstanden.
 
+**Zu den Screenshots:**
+[Alle Screenshots in der Übersicht](docs/screenshots/overview.md)
+
 💡 Dieses Projekt wurde auch in einem anderen Softwarestack umgesetzt:
 - [Markdown-CMS in PHP](https://github.com/jgteam/bell--markdown-cms--php)
 
