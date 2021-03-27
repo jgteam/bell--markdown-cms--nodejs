@@ -1,7 +1,7 @@
 Title: Jannis Günsche
 Date: 02-15-2021
 ShowLatestWork: true
-LatestWorkHeading: Mein neustes Projekt
+LatestWorkHeading: Mein neustes Projekt:
 Type: home
 
 [DOCUMENTSTART]
