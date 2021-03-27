@@ -1,3 +1,7 @@
+**Diese Screenshots zeigen das Projekt an sich, und nicht das Projekt in einem bestimmten Stack, weshalb es zu Abweichungen kommen könnte.*
+
+---
+
 **Abbildung I:** Default Landingpage
 ![Default Landingpage](home.png)
 
