@@ -1,4 +1,4 @@
-# Markdown-CMS (Stack: Nodejs)
+# Markdown-CMS (Stack: Node.js)
 
 💡 Dieses Repo ist im Zusammenhang mit der [besonderen Lernleistung im Fach Informatik von Jannis Günsche](https://github.com/jgteam/bell--paper) entstanden.
 
